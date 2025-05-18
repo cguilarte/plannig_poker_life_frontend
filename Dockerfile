@@ -42,8 +42,8 @@ COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
 
 # Exponer puerto y definir variables de entorno
-EXPOSE 3001
-ENV PORT=3001
+EXPOSE 3003
+ENV PORT=3003
 
 # Comando para iniciar la aplicación
 CMD ["node", "server.js"]
