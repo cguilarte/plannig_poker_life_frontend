@@ -1,0 +1,619 @@
+[
+
+{
+  "_id": {
+    "$oid": "653fc292ea8888ea8f1d3fb0"
+  },
+  "boardId": 65,
+  "sprintId": 252,
+  "title": "Organización con carpetas",
+  "description": "*COMO*  un Nodder\n\n*QUIERO* poder exportar uno o más templates seleccionados\n\n*DE FORMA QUE* pueda compartir los mismos con otros Nodders",
+  "project": {
+    "id": "10131",
+    "name": "[TECH] Email Tool",
+    "key": "EMT",
+    "projectTypeKey": "software",
+    "_id": {
+      "$oid": "653fc292ea8888ea8f1d3fb1"
+    }
+  },
+  "issuetype": {
+    "id": "10006",
+    "name": "Historia",
+    "description": "Una función o funcionalidad expresada como objetivo del usuario.",
+    "iconUrl": "https://api.atlassian.com/ex/jira/1b788299-2cca-4255-905e-dc8a4e55cc42/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+    "_id": {
+      "$oid": "653fc292ea8888ea8f1d3fb2"
+    }
+  },
+  "id": "21857",
+  "key": "EMT-902342",
+  "status": {
+    "id": "10170",
+    "name": "Tareas por hacer",
+    "iconUrl": "https://nodus-company.atlassian.net/images/icons/status_generic.gif",
+    "_id": {
+      "$oid": "653fc292ea8888ea8f1d3fb3"
+    }
+  },
+  "creator": {
+    "accountId": "63681d5c0ef20a5c40a352ad",
+    "emailAddress": "santiago.r@noduscompany.com",
+    "avatarUrls": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63681d5c0ef20a5c40a352ad/6e734aa2-b172-43b9-b17d-cda8c2c4515f/48",
+    "displayName": "Santiago Russo",
+    "_id": {
+      "$oid": "653fc292ea8888ea8f1d3fb4"
+    }
+  },
+  "assignee": {
+    "accountId": null,
+    "emailAddress": null,
+    "avatarUrls": null,
+    "displayName": null,
+    "_id": {
+      "$oid": "653fc292ea8888ea8f1d3fb5"
+    }
+  },
+  "subtasks": [],
+  "storyPoint": 0,
+  "stimatePoint": 0,
+  "planningId": "f579ead9-7c42-4171-b12d-578931d717c8",
+  "statusStimate": "PENDING",
+  "order": 0,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-10-30T14:49:54.595Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-30T14:49:54.595Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "653fc292ea8888ea8f1d3fb6"
+  },
+  "boardId": 65,
+  "sprintId": 252,
+  "title": "[CH PLUS][TEST][TOOLS] Sugerencia: Un titular y un sub no tienen tipografías de backup",
+  "description": "*Resultado Actual:*  La tipografía que figura en el título y subtítulo de la sección de herramientas es solamente Google Sans.\n\nAplicaciones y herramientas\n\nMágico y divertido a partes iguales\n\n\n\n*Resultado Esperado:* El resto de as tipografías del sitio (a excepción de los disclaimers) al inspeccionar tienen luego de Google Sans las siguientes tipografías:\n\n“Google Sans”, Roboto, Helvética, s…\n\n\n\nVer Evidencia en el siguiente link: [https://drive.google.com/drive/folders/1-9xM3f2ayUj4q4GNuOAbQIgOEyZGGlZ6|https://drive.google.com/drive/folders/1-9xM3f2ayUj4q4GNuOAbQIgOEyZGGlZ6|smart-link] \n\n\n\nGracias.",
+  "project": {
+    "id": "10124",
+    "name": "Landings",
+    "key": "LAN",
+    "projectTypeKey": "software",
+    "_id": {
+      "$oid": "653fc292ea8888ea8f1d3fb7"
+    }
+  },
+  "issuetype": {
+    "id": "10403",
+    "name": "Error",
+    "description": "Un problema o error.",
+    "iconUrl": "https://api.atlassian.com/ex/jira/1b788299-2cca-4255-905e-dc8a4e55cc42/rest/api/2/universal_avatar/view/type/issuetype/avatar/10303?size=medium",
+    "_id": {
+      "$oid": "653fc292ea8888ea8f1d3fb8"
+    }
+  },
+  "id": "22067",
+  "key": "LAN-12153",
+  "status": {
+    "id": "10009",
+    "name": "Finalizada",
+    "iconUrl": "https://api.atlassian.com/ex/jira/1b788299-2cca-4255-905e-dc8a4e55cc42/",
+    "_id": {
+      "$oid": "653fc292ea8888ea8f1d3fb9"
+    }
+  },
+  "creator": {
+    "accountId": "60f19027b9ef6f006938d601",
+    "emailAddress": "araceli@noduscompany.com",
+    "avatarUrls": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/60f19027b9ef6f006938d601/6a52b9df-ffa6-48de-8b4a-18ba62862123/48",
+    "displayName": "Araceli Sánchez",
+    "_id": {
+      "$oid": "653fc292ea8888ea8f1d3fba"
+    }
+  },
+  "assignee": {
+    "accountId": "60ddd3087536500070bc4f2d",
+    "emailAddress": "facundolemos@noduscompany.com",
+    "avatarUrls": "https://secure.gravatar.com/avatar/57394c62650c0f000945269f3ac74478?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FFL-0.png",
+    "displayName": "Facundo Lemos",
+    "_id": {
+      "$oid": "653fc292ea8888ea8f1d3fbb"
+    }
+  },
+  "subtasks": [],
+  "storyPoint": 0,
+  "stimatePoint": 0,
+  "planningId": "f579ead9-7c42-4171-b12d-578931d717c8",
+  "statusStimate": "PENDING",
+  "order": 0,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-10-30T14:49:54.595Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-30T14:49:54.595Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65400802d1115985dafcb69b"
+  },
+  "boardId": 65,
+  "sprintId": 252,
+  "title": "[CH PLUS][TEST][TOOLS] Sugerencia: Un titular y un sub no tienen tipografías de backup",
+  "description": "*Resultado Actual:*  La tipografía que figura en el título y subtítulo de la sección de herramientas es solamente Google Sans.\n\nAplicaciones y herramientas\n\nMágico y divertido a partes iguales\n\n\n\n*Resultado Esperado:* El resto de as tipografías del sitio (a excepción de los disclaimers) al inspeccionar tienen luego de Google Sans las siguientes tipografías:\n\n“Google Sans”, Roboto, Helvética, s…\n\n\n\nVer Evidencia en el siguiente link: [https://drive.google.com/drive/folders/1-9xM3f2ayUj4q4GNuOAbQIgOEyZGGlZ6|https://drive.google.com/drive/folders/1-9xM3f2ayUj4q4GNuOAbQIgOEyZGGlZ6|smart-link] \n\n\n\nGracias.",
+  "project": {
+    "id": "10124",
+    "name": "Landings",
+    "key": "LAN",
+    "projectTypeKey": "software",
+    "_id": {
+      "$oid": "65400802d1115985dafcb69c"
+    }
+  },
+  "issuetype": {
+    "id": "10403",
+    "name": "Error",
+    "description": "Un problema o error.",
+    "iconUrl": "https://api.atlassian.com/ex/jira/1b788299-2cca-4255-905e-dc8a4e55cc42/rest/api/2/universal_avatar/view/type/issuetype/avatar/10303?size=medium",
+    "_id": {
+      "$oid": "65400802d1115985dafcb69d"
+    }
+  },
+  "id": "22067",
+  "key": "LAN-324115",
+  "status": {
+    "id": "10009",
+    "name": "Finalizada",
+    "iconUrl": "https://api.atlassian.com/ex/jira/1b788299-2cca-4255-905e-dc8a4e55cc42/",
+    "_id": {
+      "$oid": "65400802d1115985dafcb69e"
+    }
+  },
+  "creator": {
+    "accountId": "60f19027b9ef6f006938d601",
+    "emailAddress": "araceli@noduscompany.com",
+    "avatarUrls": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/60f19027b9ef6f006938d601/6a52b9df-ffa6-48de-8b4a-18ba62862123/48",
+    "displayName": "Araceli Sánchez",
+    "_id": {
+      "$oid": "65400802d1115985dafcb69f"
+    }
+  },
+  "assignee": {
+    "accountId": "60ddd3087536500070bc4f2d",
+    "emailAddress": "facundolemos@noduscompany.com",
+    "avatarUrls": "https://secure.gravatar.com/avatar/57394c62650c0f000945269f3ac74478?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FFL-0.png",
+    "displayName": "Facundo Lemos",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6a0"
+    }
+  },
+  "subtasks": [],
+  "storyPoint": 0,
+  "stimatePoint": 0,
+  "planningId": "75380ee6-ce25-437c-be39-b504acd639ac",
+  "statusStimate": "PENDING",
+  "order": 0,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-10-30T19:46:10.418Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-30T19:46:10.418Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65400802d1115985dafcb6a1"
+  },
+  "boardId": 65,
+  "sprintId": 252,
+  "title": "Exportar template/s seleccionado/s",
+  "description": "*COMO*  un Nodder\n\n*QUIERO* poder exportar uno o más templates seleccionados\n\n*DE FORMA QUE* pueda compartir los mismos con otros Nodders\n\nHola equipo Tenemos que crear un dashboard que se pueda implementar para cualquier tipo de e-commerce \n\n* Diseño a criterio de dev-front (investiguemos en la web diseños, tamb tenemos recursos para sacar ideas)\n* Se deberá crear:\n** Lateral nav con todas las opciones\n** top bar, que incluya:\n***  una img o icono del usuario, desde ahí se podrá loguear o desloguear, \n*** el nombre de la sección en la que se encuentra el usuario.\n*** una campana para notificaciones\n** dentro de la visual general contara con diferentes gráficos que indicaran progreso de ventas, productos más vendidos etc\n* Base\nUtilizar [UX challenge ADMIN|https://dev.nodux-admin.noduscompany.com/login] de ejemplo y [Cowanners Admin|https://dev.cowana-admin.noduscompany.com/login]\n* Recursos\n[Img de lo charlado en la ofi|https://drive.google.com/drive/folders/1SRtbYlmfbhd_IVpVQo3uhir4I7sk8lhI]\n[referencia de first view|https://drive.google.com/drive/folders/1SRtbYlmfbhd_IVpVQo3uhir4I7sk8lhI]\n[https://nextui.org/docs/components/avatar|https://nextui.org/docs/components/avatar|smart-link] \n[https://ui.shadcn.com/|https://ui.shadcn.com/|smart-link] \n[https://tailwindui.com/components/preview|https://tailwindui.com/components/preview|smart-link] \n* Repo\n[https://bitbucket.org/nodus-dev/admin/src/dev/|https://bitbucket.org/nodus-dev/admin/src/dev/|smart-link] \n\nCharlemos todo lo que se les venga en mente, propuestas/ideas y vallamos dandole forma.\n\n{panel:bgColor=#e3fcef}\nTecnologias Next.js, Typescript, Tailwind, \nIconos: [https://icon-sets.iconify.design/|https://icon-sets.iconify.design/|smart-link] \n{panel}\n\nGracias!",
+  "project": {
+    "id": "10131",
+    "name": "[TECH] Email Tool",
+    "key": "EMT",
+    "projectTypeKey": "software",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6a2"
+    }
+  },
+  "issuetype": {
+    "id": "10006",
+    "name": "Historia",
+    "description": "Una función o funcionalidad expresada como objetivo del usuario.",
+    "iconUrl": "https://api.atlassian.com/ex/jira/1b788299-2cca-4255-905e-dc8a4e55cc42/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6a3"
+    }
+  },
+  "id": "21852",
+  "key": "EMT-242285",
+  "status": {
+    "id": "10170",
+    "name": "Tareas por hacer",
+    "iconUrl": "https://nodus-company.atlassian.net/images/icons/status_generic.gif",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6a4"
+    }
+  },
+  "creator": {
+    "accountId": "63681d5c0ef20a5c40a352ad",
+    "emailAddress": "santiago.r@noduscompany.com",
+    "avatarUrls": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63681d5c0ef20a5c40a352ad/6e734aa2-b172-43b9-b17d-cda8c2c4515f/48",
+    "displayName": "Santiago Russo",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6a5"
+    }
+  },
+  "assignee": {
+    "accountId": null,
+    "emailAddress": null,
+    "avatarUrls": null,
+    "displayName": null,
+    "_id": {
+      "$oid": "65400802d1115985dafcb6a6"
+    }
+  },
+  "subtasks": [],
+  "storyPoint": 0,
+  "stimatePoint": 0,
+  "planningId": "75380ee6-ce25-437c-be39-b504acd639ac",
+  "statusStimate": "PENDING",
+  "order": 0,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-10-30T19:46:10.418Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-30T19:46:10.418Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65400802d1115985dafcb6a7"
+  },
+  "boardId": 65,
+  "sprintId": 252,
+  "title": "Improtar template seleccionado",
+  "description": "*COMO*  un Nodder\n\n*QUIERO* poder importar uno o más templates exportados\n\n*DE FORMA QUE* pueda ver los templates armados por otros Nodders\n\n* Usamos logica de merge igual que el export actual",
+  "project": {
+    "id": "10131",
+    "name": "[TECH] Email Tool",
+    "key": "EMT",
+    "projectTypeKey": "software",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6a8"
+    }
+  },
+  "issuetype": {
+    "id": "10006",
+    "name": "Historia",
+    "description": "Una función o funcionalidad expresada como objetivo del usuario.",
+    "iconUrl": "https://api.atlassian.com/ex/jira/1b788299-2cca-4255-905e-dc8a4e55cc42/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6a9"
+    }
+  },
+  "id": "21853",
+  "key": "EMT-8246",
+  "status": {
+    "id": "10170",
+    "name": "Tareas por hacer",
+    "iconUrl": "https://nodus-company.atlassian.net/images/icons/status_generic.gif",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6aa"
+    }
+  },
+  "creator": {
+    "accountId": "63681d5c0ef20a5c40a352ad",
+    "emailAddress": "santiago.r@noduscompany.com",
+    "avatarUrls": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63681d5c0ef20a5c40a352ad/6e734aa2-b172-43b9-b17d-cda8c2c4515f/48",
+    "displayName": "Santiago Russo",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6ab"
+    }
+  },
+  "assignee": {
+    "accountId": null,
+    "emailAddress": null,
+    "avatarUrls": null,
+    "displayName": null,
+    "_id": {
+      "$oid": "65400802d1115985dafcb6ac"
+    }
+  },
+  "subtasks": [],
+  "storyPoint": 0,
+  "stimatePoint": 0,
+  "planningId": "75380ee6-ce25-437c-be39-b504acd639ac",
+  "statusStimate": "PENDING",
+  "order": 0,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-10-30T19:46:10.418Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-30T19:46:10.418Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65400802d1115985dafcb6ad"
+  },
+  "boardId": 65,
+  "sprintId": 252,
+  "title": "Mejoras de estilos",
+  "description": "",
+  "project": {
+    "id": "10131",
+    "name": "[TECH] Email Tool",
+    "key": "EMT",
+    "projectTypeKey": "software",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6ae"
+    }
+  },
+  "issuetype": {
+    "id": "10006",
+    "name": "Historia",
+    "description": "Una función o funcionalidad expresada como objetivo del usuario.",
+    "iconUrl": "https://api.atlassian.com/ex/jira/1b788299-2cca-4255-905e-dc8a4e55cc42/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6af"
+    }
+  },
+  "id": "21858",
+  "key": "EMT-9341",
+  "status": {
+    "id": "10170",
+    "name": "Tareas por hacer",
+    "iconUrl": "https://nodus-company.atlassian.net/images/icons/status_generic.gif",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6b0"
+    }
+  },
+  "creator": {
+    "accountId": "63681d5c0ef20a5c40a352ad",
+    "emailAddress": "santiago.r@noduscompany.com",
+    "avatarUrls": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63681d5c0ef20a5c40a352ad/6e734aa2-b172-43b9-b17d-cda8c2c4515f/48",
+    "displayName": "Santiago Russo",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6b1"
+    }
+  },
+  "assignee": {
+    "accountId": null,
+    "emailAddress": null,
+    "avatarUrls": null,
+    "displayName": null,
+    "_id": {
+      "$oid": "65400802d1115985dafcb6b2"
+    }
+  },
+  "subtasks": [],
+  "storyPoint": 0,
+  "stimatePoint": 0,
+  "planningId": "75380ee6-ce25-437c-be39-b504acd639ac",
+  "statusStimate": "PENDING",
+  "order": 0,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-10-30T19:46:10.419Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-30T19:46:10.419Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65400802d1115985dafcb6ad"
+  },
+  "boardId": 65,
+  "sprintId": 252,
+  "title": "Mejoras de estilos",
+  "description": "",
+  "project": {
+    "id": "10131",
+    "name": "[TECH] Email Tool",
+    "key": "EMT",
+    "projectTypeKey": "software",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6ae"
+    }
+  },
+  "issuetype": {
+    "id": "10006",
+    "name": "Historia",
+    "description": "Una función o funcionalidad expresada como objetivo del usuario.",
+    "iconUrl": "https://api.atlassian.com/ex/jira/1b788299-2cca-4255-905e-dc8a4e55cc42/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6af"
+    }
+  },
+  "id": "21858",
+  "key": "EMT-92ds341",
+  "status": {
+    "id": "10170",
+    "name": "Tareas por hacer",
+    "iconUrl": "https://nodus-company.atlassian.net/images/icons/status_generic.gif",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6b0"
+    }
+  },
+  "creator": {
+    "accountId": "63681d5c0ef20a5c40a352ad",
+    "emailAddress": "santiago.r@noduscompany.com",
+    "avatarUrls": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63681d5c0ef20a5c40a352ad/6e734aa2-b172-43b9-b17d-cda8c2c4515f/48",
+    "displayName": "Santiago Russo",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6b1"
+    }
+  },
+  "assignee": {
+    "accountId": null,
+    "emailAddress": null,
+    "avatarUrls": null,
+    "displayName": null,
+    "_id": {
+      "$oid": "65400802d1115985dafcb6b2"
+    }
+  },
+  "subtasks": [],
+  "storyPoint": 0,
+  "stimatePoint": 0,
+  "planningId": "75380ee6-ce25-437c-be39-b504acd639ac",
+  "statusStimate": "PENDING",
+  "order": 0,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-10-30T19:46:10.419Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-30T19:46:10.419Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65400802d1115985dafcb6ad"
+  },
+  "boardId": 65,
+  "sprintId": 252,
+  "title": "Mejoras de estilos",
+  "description": "",
+  "project": {
+    "id": "10131",
+    "name": "[TECH] Email Tool",
+    "key": "EMT",
+    "projectTypeKey": "software",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6ae"
+    }
+  },
+  "issuetype": {
+    "id": "10006",
+    "name": "Historia",
+    "description": "Una función o funcionalidad expresada como objetivo del usuario.",
+    "iconUrl": "https://api.atlassian.com/ex/jira/1b788299-2cca-4255-905e-dc8a4e55cc42/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6af"
+    }
+  },
+  "id": "21858",
+  "key": "EMT-934231111",
+  "status": {
+    "id": "10170",
+    "name": "Tareas por hacer",
+    "iconUrl": "https://nodus-company.atlassian.net/images/icons/status_generic.gif",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6b0"
+    }
+  },
+  "creator": {
+    "accountId": "63681d5c0ef20a5c40a352ad",
+    "emailAddress": "santiago.r@noduscompany.com",
+    "avatarUrls": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63681d5c0ef20a5c40a352ad/6e734aa2-b172-43b9-b17d-cda8c2c4515f/48",
+    "displayName": "Santiago Russo",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6b1"
+    }
+  },
+  "assignee": {
+    "accountId": null,
+    "emailAddress": null,
+    "avatarUrls": null,
+    "displayName": null,
+    "_id": {
+      "$oid": "65400802d1115985dafcb6b2"
+    }
+  },
+  "subtasks": [],
+  "storyPoint": 0,
+  "stimatePoint": 0,
+  "planningId": "75380ee6-ce25-437c-be39-b504acd639ac",
+  "statusStimate": "PENDING",
+  "order": 0,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-10-30T19:46:10.419Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-30T19:46:10.419Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65400802d1115985dafcb6ad"
+  },
+  "boardId": 65,
+  "sprintId": 252,
+  "title": "Mejoras de estilos",
+  "description": "",
+  "project": {
+    "id": "10131",
+    "name": "[TECH] Email Tool",
+    "key": "EMT",
+    "projectTypeKey": "software",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6ae"
+    }
+  },
+  "issuetype": {
+    "id": "10006",
+    "name": "Historia",
+    "description": "Una función o funcionalidad expresada como objetivo del usuario.",
+    "iconUrl": "https://api.atlassian.com/ex/jira/1b788299-2cca-4255-905e-dc8a4e55cc42/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6af"
+    }
+  },
+  "id": "21858",
+  "key": "EMT-934231",
+  "status": {
+    "id": "10170",
+    "name": "Tareas por hacer",
+    "iconUrl": "https://nodus-company.atlassian.net/images/icons/status_generic.gif",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6b0"
+    }
+  },
+  "creator": {
+    "accountId": "63681d5c0ef20a5c40a352ad",
+    "emailAddress": "santiago.r@noduscompany.com",
+    "avatarUrls": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63681d5c0ef20a5c40a352ad/6e734aa2-b172-43b9-b17d-cda8c2c4515f/48",
+    "displayName": "Santiago Russo",
+    "_id": {
+      "$oid": "65400802d1115985dafcb6b1"
+    }
+  },
+  "assignee": {
+    "accountId": null,
+    "emailAddress": null,
+    "avatarUrls": null,
+    "displayName": null,
+    "_id": {
+      "$oid": "65400802d1115985dafcb6b2"
+    }
+  },
+  "subtasks": [],
+  "storyPoint": 0,
+  "stimatePoint": 0,
+  "planningId": "75380ee6-ce25-437c-be39-b504acd639ac",
+  "statusStimate": "PENDING",
+  "order": 0,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-10-30T19:46:10.419Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-30T19:46:10.419Z"
+  }
+}
+
+
+
+
+]

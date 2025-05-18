@@ -1,0 +1,25 @@
+image: atlassian/default-image:3
+
+clone:
+  depth: full
+
+pipelines:
+  branches:
+    test:   
+      - step:
+          name: Copiando Archivos
+          script:
+            - mkdir -p ~/.ssh
+            - cat known_hosts >> ~/.ssh/known_hosts
+            - (umask  077 ; echo $ACCESS_KEY_DEV_TEST | base64 --decode > ~/.ssh/id_rsa) 
+            - ssh -i ~/.ssh/id_rsa $DEFAULT_HOST_DEV_TEST "cd /var/www/html/test/$FOLDER_PROJECT; git pull && npm i --legacy-peer-deps && pm2 restart all; "
+    dev:   
+      - step:
+          name: Copiando Archivos
+          script:
+            - mkdir -p ~/.ssh
+            - cat known_hosts >> ~/.ssh/known_hosts
+            - (umask  077 ; echo $ACCESS_KEY_DEV | base64 --decode > ~/.ssh/id_rsa) 
+            - ssh -i ~/.ssh/id_rsa $DEFAULT_HOST_DEV "cd /var/www/html/dev/$FOLDER_PROJECT;  git pull && npm i --legacy-peer-deps && npm run build && pm2 restart all;"
+    
+        

@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  frontend_production:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    ports:
+      - "3001:3001"  # Cambia el puerto si es necesario
+    networks:
+      - planning_poker_default
+
+networks:
+  planning_poker_default:
+    external: true
