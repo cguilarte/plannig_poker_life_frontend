@@ -1,55 +1,49 @@
-# Utilizar una versión específica de Node.js
-FROM node:18.20.8-alpine3.21 AS base
 
+# Utilizar una versión específica de Node.js
+FROM node:18.20.5-alpine3.21 AS base
 # Instalar dependencias necesarias
 FROM base AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
 # Copiar archivos necesarios y instalar dependencias
-COPY package.json pnpm-lock.yaml ./
+COPY package.json ./
 
 # Instala Python y otras dependencias necesarias para compilar módulos nativos
-RUN apk update && apk add --no-cache python3 build-base pnpm pango-dev jpeg-dev giflib-dev librsvg
+RUN apk update && apk add --no-cache python3 build-base  pango-dev jpeg-dev giflib-dev librsvg
 
-# Usar pnpm que ya viene con Alpine o instalarlo correctamente
-RUN npm install -g pnpm@latest
-RUN pnpm install --frozen-lockfile
+RUN npm install -g npm
+ENV CI=false
+RUN npm install --legacy-peer-deps
 
 # Fase de construcción de la aplicación
 FROM base AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN npm install -g pnpm@latest
 
-# Asegurarse de que Next.js esté configurado en modo standalone
-RUN pnpm run build
+ENV CI=false
+RUN npm run build
+
+#RUN echo -e "User-agent: *\nDisallow: /" > public/robots.txt;
 
 # Fase de ejecución
 FROM base AS runner
 WORKDIR /app
 
-ENV NODE_ENV=production
-ENV NEXT_TELEMETRY_DISABLED=1
+# Crear directorio .next si no existe
+RUN mkdir -p .next
 
-# Crear usuario no-root para seguridad
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
+ENV NODE_ENV=production
 
 # Copiar archivos necesarios para la ejecución
 COPY --from=builder /app/public ./public
-
-# Cambiar propietario de los archivos copiados
-COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
-COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
-
-USER nextjs
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
 
 # Exponer puerto y definir variables de entorno
 EXPOSE 3003
 ENV PORT=3003
-ENV HOSTNAME="0.0.0.0"
 
 # Comando para iniciar la aplicación
 CMD ["node", "server.js"]
