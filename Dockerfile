@@ -10,11 +10,10 @@ WORKDIR /app
 COPY package.json pnpm-lock.yaml ./
 
 # Instala Python y otras dependencias necesarias para compilar módulos nativos
-RUN apk update && apk add --no-cache python3 build-base pango-dev jpeg-dev giflib-dev librsvg
+RUN apk update && apk add --no-cache python3 build-base pnpm pango-dev jpeg-dev giflib-dev librsvg
 
-# Habilitar y usar corepack para pnpm
-RUN corepack enable
-RUN corepack prepare pnpm@latest --activate
+# Usar pnpm que ya viene con Alpine o instalarlo correctamente
+RUN npm install -g pnpm@latest
 RUN pnpm install --frozen-lockfile
 
 # Fase de construcción de la aplicación
@@ -22,8 +21,8 @@ FROM base AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN corepack enable
-RUN corepack prepare pnpm@latest --activate
+RUN npm install -g pnpm@latest
+
 # Asegurarse de que Next.js esté configurado en modo standalone
 RUN pnpm run build
 
