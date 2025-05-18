@@ -8,7 +8,7 @@ services:
     env_file:
       - .env
     ports:
-      - "3001:3001"  # Cambia el puerto si es necesario
+      - "3003:3003"  # Cambia el puerto si es necesario
     networks:
       - planning_poker_default
 

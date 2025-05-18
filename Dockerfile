@@ -1,19 +1,19 @@
 
 # Utilizar una versión específica de Node.js
-FROM node:18.20.5-alpine3.21 AS base
+FROM node:22.13.1-alpine3.21 AS base
 
 # Instalar dependencias necesarias
 FROM base AS deps
-#RUN apk add --no-cache libc6-compat
+RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
 # Copiar archivos necesarios y instalar dependencias
 COPY package.json ./
 
 # Instala Python y otras dependencias necesarias para compilar módulos nativos
+RUN apk update && apk add --no-cache python3 build-base  pango-dev jpeg-dev giflib-dev librsvg
 
-#RUN apk update && apk add --no-cache python3 build-base  pango-dev jpeg-dev giflib-dev librsvg
-#RUN npm install -g npm
+RUN npm install -g npm
 RUN npm install env-cmd --legacy-peer-deps
 RUN npm install --legacy-peer-deps
 
