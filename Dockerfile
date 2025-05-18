@@ -1,6 +1,6 @@
 
 # Utilizar una versión específica de Node.js
-FROM node:22.13.1-alpine3.21 AS base
+FROM node:18.20.8-alpine3.21 AS base
 
 # Instalar dependencias necesarias
 FROM base AS deps
@@ -13,9 +13,8 @@ COPY package.json ./
 # Instala Python y otras dependencias necesarias para compilar módulos nativos
 RUN apk update && apk add --no-cache python3 build-base  pango-dev jpeg-dev giflib-dev librsvg
 
-RUN npm install -g npm
-RUN npm install env-cmd --legacy-peer-deps
-RUN npm install --legacy-peer-deps
+RUN npm install -g pnpm@latest-10
+RUN pnpm install
 
 # Fase de construcción de la aplicación
 FROM base AS builder
@@ -23,7 +22,7 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-RUN npm run build
+RUN pnpm run build
 
 #RUN echo -e "User-agent: *\nDisallow: /" > public/robots.txt;
 
