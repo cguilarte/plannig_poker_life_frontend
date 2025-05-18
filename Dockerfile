@@ -22,7 +22,8 @@ FROM base AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-
+RUN corepack enable
+RUN corepack prepare pnpm@latest --activate
 # Asegurarse de que Next.js esté configurado en modo standalone
 RUN pnpm run build
 
