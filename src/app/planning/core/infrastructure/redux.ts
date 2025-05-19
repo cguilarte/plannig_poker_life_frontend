@@ -3,7 +3,7 @@ import { IIssues, ITask } from '@/app/plannings/core/domain/interfaces';
 import { RootState } from '@/infrastructure/redux';
 import { createSlice, current } from '@reduxjs/toolkit';
 
-const initialState = {
+const initialState: any = {
 	guests: [],
 	profile: null,
 	planningId: null,
@@ -85,7 +85,7 @@ const planningLive = createSlice({
 
 export default planningLive.reducer;
 
-export const selectGuest = (state: RootState) => state.planningLive.guests;
+export const selectGuest = (state: RootState) => state.planningLive?.guests;
 export const selectProfile = (state: RootState) => state.planningLive.profile;
 export const selectPlanningId = (state: RootState) => state.planningLive.planningId;
 export const selectInfoPlanning = (state: RootState) => state.planningLive.info;
