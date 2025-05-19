@@ -32,7 +32,7 @@ import {
 import { servicesPlanningLive } from "../../infrastructure/services";
 import { ITeam } from "@/app/plannings/core/domain/interfaces";
 import Avatars from "@/components/Avatars";
-import { useParams, useRouter } from "next/navigation";
+import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { PiPasswordLight } from "react-icons/pi";
 
 interface IProps {
@@ -54,7 +54,7 @@ const SessionInvitado = ({
   const [passwordSucess, setPasswordSucess] = useState(false);
   const dispatch = useDispatch();
   const router = useRouter();
-  const param: any = useParams();
+  const param: any = useSearchParams();
 
   const {
     handleSubmit,
@@ -131,10 +131,10 @@ const SessionInvitado = ({
 
   useEffect(() => {
     if (param) {
-      setValue("name", param?.name || "");
-      setValue("email", param?.email || "");
-      setAvatar(param?.avatar || "");
-      setSelected(param?.teamId || "");
+      setValue("name", param.get("name") || "");
+      setValue("email", param.get("email") || "");
+      setAvatar(param.get("avatar") || "");
+      setSelected(param.get("teamId") || "");
     }
   }, [param]);
   return (
