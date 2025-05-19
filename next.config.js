@@ -25,7 +25,7 @@ const nextConfig = {
 			},
 			{
 				protocol: 'https',
-				hostname: 'dev.poker-planning.noduscompany.com',
+				hostname: 'planning.jitsoft.org',
 				port: '',
 			},
 			{
