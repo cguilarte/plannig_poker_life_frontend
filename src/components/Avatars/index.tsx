@@ -88,7 +88,7 @@ const Avatars = ({ onSave, avatar }: IProps) => {
         <Avatar
           src={`${selected ? `/img/avatars/${selected}` : ""}`}
           size="lg"
-          showFallback={false}
+          className="opacity-100"
         />
         <div
           onClick={onOpen}

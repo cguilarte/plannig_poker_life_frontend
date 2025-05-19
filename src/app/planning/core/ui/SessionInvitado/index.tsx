@@ -31,7 +31,7 @@ import {
 } from "../../infrastructure/redux";
 import { servicesPlanningLive } from "../../infrastructure/services";
 import { ITeam } from "@/app/plannings/core/domain/interfaces";
-import Avatars from "@/components/Avatars";
+import Avatars, { AVATAR_ARRAY } from "@/components/Avatars";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { PiPasswordLight } from "react-icons/pi";
 
@@ -83,7 +83,11 @@ const SessionInvitado = ({
       onOpenChange();
     });
 
-  const [avatar, setAvatar] = useState<string | null>(null);
+  const [avatar, setAvatar] = useState<string | null>(
+    `/img/avatars/${
+      AVATAR_ARRAY[Math.floor(Math.random() * AVATAR_ARRAY.length)]
+    }`
+  );
   const [ErrorPlanning, setErrorPlanning] = useState<string | null>(null);
 
   const [selected, setSelected] = React.useState<string>("");
@@ -164,7 +168,7 @@ const SessionInvitado = ({
 
           <div className="w-full space-y-4 my-4">
             <div className="flex items-center space-x-6">
-              <Avatars onSave={setAvatar} />
+              <Avatars onSave={setAvatar} avatar={avatar} />
               <Controller
                 control={control}
                 name="name"
@@ -227,6 +231,7 @@ const SessionInvitado = ({
                   label: "text-sm mb-2",
                   base: " pb-2 gap-4",
                 }}
+                value={selected}
                 defaultValue={selected}
               >
                 {teams.length > 0 &&
