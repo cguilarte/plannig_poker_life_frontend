@@ -18,15 +18,16 @@
     --background-end-rgb: 0, 0, 0;
   }
 
- 
+
 }
 
-body{
+body {
   font-family: 'Nunito Sans', sans-serif;
 }
- .dark .akEditor{
-      background-color: #1F2023!important;
-  }
+
+.dark .akEditor {
+  background-color: #1F2023 !important;
+}
 
 /* body {
   color: rgb(var(--foreground-rgb));
@@ -38,44 +39,43 @@ body{
     rgb(var(--background-start-rgb));
 } */
 
-.ak-editor-content-area{
-  padding: 0px!important;
+.ak-editor-content-area {
+  padding: 0px !important;
 }
 
-.css-14dakni-FixedToolbar{
-  padding:4px 8px!important;
+.css-14dakni-FixedToolbar {
+  padding: 4px 8px !important;
 }
 
 
 
 .animation-pulse {
-    /*box-shadow: 0 0 0 20px rgba(229,62,62, 0.5);
+  /*box-shadow: 0 0 0 20px rgba(229,62,62, 0.5);
     transform: scale(0.8);*/
-    animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 #536DFE;
-    }
-
-    70% {
-        box-shadow: 0 0 0 8px rgba(229, 62, 62, 0);
-    }
-
-    100% {
-    }
-}
-
-
-  a{
-    color:#0052cc;
+  0% {
+    box-shadow: 0 0 0 0 #536DFE;
   }
 
-  .col-span-10 {
-    grid-column: span 10/span 10
+  70% {
+    box-shadow: 0 0 0 8px rgba(229, 62, 62, 0);
+  }
+
+  100% {}
 }
 
-  .col-span-2 {
-    grid-column: span 2/span 2
+
+a {
+  color: #0052cc;
+}
+
+.col-span-10 {
+  grid-column: span 10/span 10
+}
+
+.col-span-2 {
+  grid-column: span 2/span 2
 }

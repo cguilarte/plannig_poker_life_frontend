@@ -218,6 +218,11 @@ mutation SendEmoji($emoji: String, $planningId: String, $name: String) {
   sendEmoji(emoji: $emoji, planningId: $planningId, name: $name)
 }`
 
+export const LANZAR_EMOJI = gql`
+mutation LanzarEmoji($emoji: String, $planningId: String, $userId: String) {
+  lanzarEmoji(emoji: $emoji, planningId: $planningId, userId: $userId)
+}`
+
 export const SEND_CONTROL_PLANNING = gql`
 mutation SendControlPlanning($planningId: String, $control: Boolean) {
   sendControlPlanning(planningId: $planningId, control: $control)
@@ -410,6 +415,14 @@ subscription EmojiFly($planningId: String) {
   emojiFly(planningId: $planningId) {
     emoji
     name
+  }
+}`
+
+export const SUSCRIPTION_LANZAR_EMOJI = gql`
+subscription LanzarEmojiFly($planningId: String) {
+  lanzarEmojiFly(planningId: $planningId) {
+    emoji
+    userId
   }
 }`
 
